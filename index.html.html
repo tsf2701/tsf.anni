@@ -1,0 +1,128 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Tasfia &amp; Ami · 3rd Anniversary</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet"><style>:root{--bg:#1a1022;--bg2:#251836;--ink:#f6efe9;--mute:#bfb0c4;--rose:#eba3ac;--gold:#dcb676;--line:#4a3563}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(1200px 700px at 80% -10%,#3b2457 0,transparent 60%),var(--bg);color:var(--ink);font:18px/1.75 "Hind Siliguri",system-ui,sans-serif;min-height:100vh}
+h1,h2,h3{font-family:"Cormorant Garamond","Hind Siliguri",serif;font-weight:600;line-height:1.15}
+h1{font-size:clamp(2.6rem,8vw,5.2rem)}h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:.6em}
+a{color:var(--rose)}
+nav{position:sticky;top:0;z-index:20;display:flex;gap:.3rem;flex-wrap:wrap;justify-content:center;padding:.8rem 1rem;background:rgba(26,16,34,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav a{color:var(--mute);text-decoration:none;padding:.3rem .9rem;border-radius:99px;font-size:.95rem}
+nav a:hover,nav a.on{background:var(--rose);color:#2a1630}
+main{max-width:980px;margin:0 auto;padding:3rem 1.4rem 5rem}
+.hero{text-align:center;padding:5rem 0 3rem}
+.hero p.sub{color:var(--mute);margin:1rem auto 2.5rem;max-width:34rem}
+.counter{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:1rem;max-width:760px;margin:0 auto}
+.counter div{border:1px solid var(--line);border-radius:18px 4px 18px 4px;padding:1.1rem .5rem;background:var(--bg2)}
+.counter b{display:block;font:600 2.6rem/1 "Cormorant Garamond",serif;color:var(--gold)}
+.counter span{font-size:.9rem;color:var(--mute)}
+.count-note{margin-top:2.5rem;color:var(--mute)}.count-note strong{color:var(--rose);font-size:1.3rem}
+.btn{display:inline-block;margin-top:1.6rem;padding:.7rem 1.6rem;border:0;border-radius:99px;background:var(--rose);color:#2a1630;font:600 1rem "Hind Siliguri",sans-serif;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--gold)}
+.timeline{border-left:2px solid var(--line);margin-left:.6rem;padding-left:1.8rem}
+.timeline article{position:relative;margin-bottom:2.4rem}
+.timeline article:before{content:"";position:absolute;left:-2.3rem;top:.55rem;width:.9rem;height:.9rem;border-radius:50%;background:var(--rose);box-shadow:0 0 0 5px var(--bg)}
+.timeline time{color:var(--gold);font-size:.95rem}.timeline h3{font-size:1.6rem}.timeline p{color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem}
+.tile{aspect-ratio:3/4;border-radius:14px;overflow:hidden;background:linear-gradient(160deg,var(--bg2),#3a2457);border:1px solid var(--line);position:relative;cursor:zoom-in;display:grid;place-items:center;color:var(--mute);font-size:.9rem;text-align:center;padding:1rem}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile:nth-child(3n+2){aspect-ratio:1}
+.lightbox{position:fixed;inset:0;background:rgba(10,5,15,.92);display:none;place-items:center;z-index:50;padding:1rem}
+.lightbox.open{display:grid}.lightbox img{max-width:100%;max-height:90vh;border-radius:10px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:22px 6px 22px 6px;padding:1.4rem}
+.card h3{color:var(--gold);font-size:1.5rem}.card p{color:var(--mute)}
+.letter{background:var(--ink);color:#2b1b33;border-radius:6px;padding:clamp(1.6rem,5vw,3.2rem);box-shadow:0 20px 60px rgba(0,0,0,.45);font-size:1.15rem}
+.letter h2{color:#6d2f55}.letter p{margin-bottom:1.1rem}.letter .sign{text-align:right;font-family:"Cormorant Garamond",serif;font-size:1.6rem;color:#6d2f55}
+.reason{min-height:9rem;display:grid;place-items:center;text-align:center;font:600 clamp(1.5rem,4vw,2.2rem)/1.3 "Cormorant Garamond","Hind Siliguri",serif;border:1px dashed var(--rose);border-radius:20px;padding:1.5rem;margin-top:1rem}
+.center{text-align:center}
+.heart{position:fixed;bottom:-2rem;pointer-events:none;color:var(--rose);animation:up 5s linear forwards;z-index:40}
+@keyframes up{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+.music{position:fixed;right:1rem;bottom:1rem;z-index:30;width:3rem;height:3rem;border-radius:50%;border:1px solid var(--line);background:var(--bg2);color:var(--rose);cursor:pointer;font-size:1.2rem}
+footer{text-align:center;color:var(--mute);padding:2rem;border-top:1px solid var(--line);font-size:.9rem}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+.page[hidden]{display:none}</style></head><body><nav id="nav"></nav><main>
+<section class="page" id="p-index" hidden>
+<section class="hero"><h1>Tasfia &amp; Ami</h1><p class="sub">17 December 2023 theke shuru hoyechhe amader golpo. Ekhane protita second-e tomar jonno bhalobasha gona hocche.</p>
+<div class="counter"><div><b id="yy">00</b><span>Bochhor</span></div><div><b id="mm">00</b><span>Mash</span></div><div><b id="dd">00</b><span>Din</span></div><div><b id="hh">00</b><span>Ghonta</span></div><div><b id="mi">00</b><span>Minute</span></div><div><b id="ss">00</b><span>Second</span></div></div>
+<p class="count-note" id="next"></p><a class="btn" href="story.html">Amader golpo dekho</a></section>
+</section>
+<section class="page" id="p-story" hidden><h2>Amader golpo</h2><div class="timeline">
+<article><time>17 December 2023</time><h3>Shuru</h3><p>Ei diner por theke amar jibon onno rokom.</p></article>
+<article><time>5 January 2023</time><h3>Prothom dekha</h3><p>Class 8-e, school-e. Tumi pink colour-er jacket porechhile.</p></article>
+<article><time>20 January 2024</time><h3>Prothom date</h3><p>Fokirganj. Onek happy lagchilo, mone hochhilo lafiye uthi. Tumi school dress ar cap pore esechhile.</p></article>
+<article><time>27 January 2024</time><h3>Prothom gift</h3><p>Tomar jonmodin-e buka-chadar moto kichu ekta dilam, ki chilo ta mone nei 😅</p></article>
+<article><time>17 December 2024</time><h3>Prothom anniversary</h3><p>Onek bhalo gechhe. Onek happy lagchilo, karon amader jibon-ta bodle gechhilo.</p></article>
+<article><time>17 December 2025</time><h3>Dui bochhor</h3><p>Ektu kharap gechhe. Manusher nojor legechhilo amader, onek jhogra hoto.</p></article>
+<article><time>23 November 2026</time><h3>Boro jhamela mitlo</h3><p>Onek boro ekta jhamela mitey gechhe, ar ajke onek happy lagche.</p></article>
+<article><time>17 December 2026</time><h3>Tin bochhor</h3><p>Ei bochhor-ta-o kharap gechhe, kintu tobuo tumi achho. Ar ei website-ta tomar jonno.</p></article></div>
+</section>
+<section class="page" id="p-memories" hidden><h2>Memorable dates</h2><div class="cards">
+<div class="card"><h3>17 Dec 2023</h3><p>Amader shuru.</p></div>
+<div class="card"><h3>27 January</h3><p>Amar Moynar jonmodin.</p></div>
+<div class="card"><h3>Prothom Eid, 2024</h3><p>Kintu ghurte jawa hoyni.</p></div>
+<div class="card"><h3>31 March 2025</h3><p>Ekta funny moment hoyechhilo. Oi din tumi nanu bari chile, ar ekta kahini hoyechhe. Ekhane na, tumi personally knock koro, ami bolbo 😏</p></div>
+<div class="card"><h3>Jhogra</h3><p>Eitar kono limit nai, infinite 😂</p></div>
+<div class="card"><h3>Je din bhulbo na</h3><p>Ami amar life-e tomar sathe thaka kono din-i bhulte parbo na.</p></div></div>
+</section>
+<section class="page" id="p-gallery" hidden>
+<h2>Gallery</h2><p style="color:var(--mute);margin-bottom:1.5rem">Chhobi gulo <code>images/</code> folder-e photo1.jpg, photo2.jpg … nam e rakho.</p><div class="grid">
+<div class="tile"><img src="images/photo1.jpg" alt="Amader chhobi 1">Chhobi 1</div>
+<div class="tile"><img src="images/photo2.jpg" alt="Amader chhobi 2">Chhobi 2</div>
+<div class="tile"><img src="images/photo3.jpg" alt="Amader chhobi 3">Chhobi 3</div>
+<div class="tile"><img src="images/photo4.jpg" alt="Amader chhobi 4">Chhobi 4</div>
+<div class="tile"><img src="images/photo5.jpg" alt="Amader chhobi 5">Chhobi 5</div>
+<div class="tile"><img src="images/photo6.jpg" alt="Amader chhobi 6">Chhobi 6</div>
+<div class="tile"><img src="images/photo7.jpg" alt="Amader chhobi 7">Chhobi 7</div>
+<div class="tile"><img src="images/photo8.jpg" alt="Amader chhobi 8">Chhobi 8</div>
+<div class="tile"><img src="images/photo9.jpg" alt="Amader chhobi 9">Chhobi 9</div>
+</div><div class="lightbox" id="lb"><img alt=""></div>
+</section>
+<section class="page" id="p-reasons" hidden><div class="center"><h2>Tomake keno bhalobashi</h2><p style="color:var(--mute)">Mot 5 ta karon. Button-e chap dao, ek ek kore dekho.</p><p id="rn" style="color:var(--gold)"></p><div class="reason" id="rtext">Chap dao ❤</div><button class="btn" id="rbtn">Porer karon</button></div>
+</section>
+<section class="page" id="p-letter" hidden><div class="center" id="gate"><h2>Ekta chhoto puzzle</h2><p style="color:var(--mute)">Chithi porar age ekta pass lagbe.</p><div class="reason">Tasfia ekta ______</div>
+<div style="display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center;margin-top:1rem"><button class="btn" onclick="unlock('chagol')">1. Chagol</button><button class="btn" onclick="unlock('pagol')">2. Pagol</button><button class="btn" onclick="unlock('abnormal')">3. Abnormal</button><button class="btn" onclick="unlock('telapuka')">4. Telapuka</button></div><p id="gmsg" style="margin-top:1.2rem;color:var(--gold)"></p></div>
+<div id="lt" hidden><div class="letter"><h2>Moyna,</h2>
+<p>আমাদের একসাথে ২ বছরেরও বেশি সময় পার হয়ে গেছে। সময়টা কম না। এত দিনে অনেক কিছু দেখেছি, অনেক কিছু শিখেছি। এই সময় আমাকে বুঝিয়েছে তুমি শুধু আমার জীবনের একটা অংশ না, তুমি আমার জীবনের একটা অভ্যাস হয়ে গেছো। এমন একটা অভ্যাস, যেটা ছাড়া দিনগুলো অসম্পূর্ণ লাগে।</p>
+<p>শুরুর দিনগুলোর কথা মনে পড়লে এখনো ভালো লাগে। তখন সবকিছু নতুন ছিল, অনুভূতিগুলো পরিষ্কার ছিল, ভয়ও কম ছিল। সময়ের সাথে সাথে বাস্তবতা এসেছে, দূরত্ব এসেছে, অপেক্ষা এসেছে। কিন্তু জানো? এসবের মাঝেও তোমার জায়গাটা কখনো বদলায়নি।</p>
+<p>আমরা সবসময় একসাথে থাকতে পারিনি। এমন অনেক সময় এসেছে, যখন তোমাকে শুধু মনের ভেতরেই রেখেছি। কথা বলতে পারিনি, দেখা করতে পারিনি। শুধু চুপচাপ অপেক্ষা করেছি। কিন্তু এই অপেক্ষাটাও আমার কাছে দামী। কারণ এই অপেক্ষার মধ্যেও আমি কখনো তোমাকে ছেড়ে দেওয়ার কথা ভাবিনি।</p>
+<p>তুমি জানো, মানুষ অনেকের সাথে কথা বলে, অনেকের সাথে হাসে। কিন্তু খুব কম মানুষ থাকে, যাদের কথা ভাবলে মনটা শান্ত হয়ে যায়। তুমি আমার কাছে ঠিক তেমন। যখন সবকিছু ভারী লাগে, যখন নিজেকে ক্লান্ত মনে হয় তখন শুধু তোমার কথা ভাবলেই মনে হয়, ঠিক আছে, সব ঠিক হয়ে যাবে।</p>
+<p class="sign">Tomar Gondar</p></div></div>
+</section>
+<section class="page" id="p-surprise" hidden><div class="center"><h2>Ekta chhoto surprise</h2><p style="color:var(--mute)">Button-ta chap dao, Moyna.</p><button class="btn" onclick="hearts(45);document.getElementById('sm').hidden=false">Chap dao 😘</button>
+<div class="card" id="sm" hidden style="margin-top:2rem"><h3>Happy 3rd Anniversary, Moyna! 😘</h3><p style="font-size:1.4rem;line-height:1.9">Ummah ummah ummah 💋<br>😘😘😘😘😘😘😘😘<br>💋💋💋💋💋💋💋💋<br>Ummah ummah ummah 😘</p></div></div>
+</section>
+</main><footer>Tasfia’r jonno, bhalobasha diye banano ❤ · 17 December 2023 theke</footer><script>const START=new Date(2023,11,17,0,0,0); // 17 Dec 2023
+const pages=[["#index","Home"],["#story","Amader golpo"],["#memories","Memories"],["#gallery","Gallery"],["#reasons","Keno bhalobashi"],["#letter","Chithi"],["#surprise","Surprise"]];
+const here=()=>location.hash||"#index";
+const nav=document.getElementById("nav");
+if(nav)nav.innerHTML=pages.map(([h,t])=>`<a href="${h}" class="${h===here()?"on":""}">${t}</a>`).join("");
+const $=id=>document.getElementById(id);
+function tick(){
+  if(!$("yy"))return;
+  const n=new Date();let y=n.getFullYear()-START.getFullYear(),m=n.getMonth()-START.getMonth(),d=n.getDate()-START.getDate();
+  if(d<0){m--;d+=new Date(n.getFullYear(),n.getMonth(),0).getDate()}
+  if(m<0){y--;m+=12}
+  const set=(i,v)=>$(i).textContent=String(v).padStart(2,"0");
+  set("yy",y);set("mm",m);set("dd",d);set("hh",n.getHours());set("mi",n.getMinutes());set("ss",n.getSeconds());
+  let next=new Date(n.getFullYear(),11,17);if(next<=n&&!(n.getMonth()==11&&n.getDate()==17))next=new Date(n.getFullYear()+1,11,17);
+  const nth=next.getFullYear()-START.getFullYear();
+  if(n.getMonth()==11&&n.getDate()==17){$("next").innerHTML=`<strong>Aj amader ${y} tomo anniversary! Happy Anniversary, Tasfia ❤</strong>`}
+  else{const days=Math.ceil((next-n)/864e5);$("next").innerHTML=`Amader <strong>${nth} tomo</strong> anniversary-r ar baki <strong>${days}</strong> din`}
+}
+tick();setInterval(tick,1000);
+function hearts(k=25){for(let i=0;i<k;i++){const h=document.createElement("span");h.className="heart";h.textContent=["❤","😘","💋","💖","✨"][i%5];h.style.left=Math.random()*100+"vw";h.style.fontSize=(1+Math.random()*1.6)+"rem";h.style.animationDelay=Math.random()*1.5+"s";document.body.appendChild(h);setTimeout(()=>h.remove(),7000)}}
+window.hearts=hearts;
+document.querySelectorAll(".tile img").forEach(i=>i.addEventListener("error",()=>i.remove()));
+const lb=$("lb");
+document.querySelectorAll(".tile").forEach(t=>t.addEventListener("click",()=>{const i=t.querySelector("img");if(i&&lb){lb.querySelector("img").src=i.src;lb.classList.add("open")}}));
+if(lb)lb.addEventListener("click",()=>lb.classList.remove("open"));
+const R=["Tomake bhalobashte kono karon lage na, tobuo formally puro kori.","Tumi emon ekjon manush amar kache, jake ami shob obosthay mone kori. Tomar bhetorer maya amake tomake bhulte-i dey na.","Tomar bhetore emon kichu ache ja amake onek attract kore. Mone hoy, explain korar kono way nai amar kache.","Tumi onek hot o acho... ummm...","I love you, tai tomake bhalobashi."];
+let ri=0;const rb=$("rbtn");if(rb)rb.addEventListener("click",()=>{$("rtext").textContent=R[ri];$("rn").textContent="Karon "+(ri+1)+" / "+R.length;ri=(ri+1)%R.length;hearts(8)});
+
+
+window.unlock=k=>{const m={chagol:"Ha ha, ekdom thik dhorechho 😂",pagol:"Thik bolechho, pagol-i to 😂",abnormal:"Sotti-i abnormal 😜",telapuka:"Telapuka! Eta-i uttor 😂"};document.getElementById("gmsg").textContent=m[k];hearts(10);setTimeout(()=>{document.getElementById("gate").hidden=true;document.getElementById("lt").hidden=false;scrollTo(0,0)},1200)};
+function route(){const id=(location.hash||"#index").slice(1);const ok=document.getElementById("p-"+id)?id:"index";
+document.querySelectorAll(".page").forEach(s=>s.hidden=s.id!=="p-"+ok);
+document.querySelectorAll("nav a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+ok));scrollTo(0,0);tick()}
+addEventListener("hashchange",route);route();</script></body></html>
